@@ -24,8 +24,17 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-websocket")
+    compile("org.springframework:spring-messaging")
+
+    compile("io.projectreactor:reactor-core")
+    compile("io.projectreactor:reactor-net")
+    compile("io.netty:netty-all:4.1.9.Final")
+    compile("io.netty:netty-transport-native-epoll:4.1.9.Final")
+//    compile("io.projectreactor:reactor-tcp:1.0.1.RELEASE")
+
+
     compile("org.webjars:webjars-locator")
-    compile("org.webjars:sockjs-client:1.0.2")
+    compile("org.webjars:sockjs-client:1.1.2")
     compile("org.webjars:stomp-websocket:2.3.3")
     compile("org.webjars:bootstrap:3.3.7")
     compile("org.webjars:jquery:3.1.0")
